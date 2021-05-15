@@ -1,0 +1,32 @@
+
+<%- include("partials/header") %>
+
+
+
+<div class="slogan-container">
+  <div class="col-xl-6 col-lg-7 ">
+    <div class="slogan"><p>We listen. <br> You prosper.
+</p></div>
+<div id="imp-btn">
+
+
+   <a href="/prev_transac"><button class="btn-more" type="submit" name="button">Previous Transaction</button></a>
+   <a href="/transfer"><button class="btn-more transacs" type="button" name="button">Transac Money</button></a>
+</div>
+  </div>
+  <div class="col-xl-6 col-lg-7">
+   <div class="money-col">
+     <p id="tag_line">Check Your Balance</p>
+     <form class="home-form" action="/" method="post">
+
+     <input class="name" type="number" name="ac_number" value=""  placeholder="Account Number" autocomplete="off" required><br>
+     <input class="name-sudo" type="text" name="ac_name" value=""  placeholder="Account Holder Name"  autocomplete="off" required><br>
+     <button type="submit" name="button">Check Balance</button>
+   </form>
+
+   </div>
+  </div>
+
+</div>
+</div>
+<%- include("partials/footer") %>

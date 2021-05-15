@@ -1,0 +1,44 @@
+<%- include("partials/header") %>
+
+<div class="prev-table">
+
+<table>
+  <tr>
+    <th>Account Holder Name</th>
+    <th>Account Number</th>
+    <th>Mail Address</th>
+    <th>View Complete Details</th>
+
+  </tr>
+
+  <%  list.forEach((item) => {%>
+
+<tr>
+  <td><%=  item.name  %></td>
+  <td><%=  item.accountno  %></td>
+  <td><%=  item.mail  %></td>
+  <form class="" action="/all" method="post">
+
+  <td><button value=<%= item.name %> class="btn-more more" type="submit" name="button">Click Here</button></td>
+</form>
+
+</tr>
+<%  }); %>
+<!-- <tr>
+  <td>Sarthak Garg</td>
+  <td>12569313</td>
+  <td>guptashreyansh22@gmail.com</td>
+  <td><button class="btn-more more" type="button" name="button">Click Here</button></td>
+
+</tr>
+<tr>
+  <td>Sarthak Garg</td>
+  <td>12569313</td>
+  <td>guptashreyansh22@gmail.com</td>
+  <td><button class="btn-more more" type="button" name="button">Click Here</button></td>
+
+</tr> -->
+
+</table>
+</div>
+<%- include("partials/footer") %>

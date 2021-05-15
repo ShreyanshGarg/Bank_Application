@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+
+<div class="slogan-container">
+
+  <div class="col-xl-12 col-lg-7 info">
+   <div class="money-col transac info-transac">
+     <div class="para">
+
+     <p style="padding-top: 42px;">Name:</p>
+     <p >Account Number:</p>
+     <p>Mobile Number:</p>
+     <p>Mail ID:</p>
+     <p>IFSC:</p>
+     <p>Amount:</p>
+   </div>
+<div class="data">
+  <p style="padding-top: 42px;"><%= name %></p>
+  <p><%= account %></p>
+  <p><%= mobile %></p>
+  <p><%= mail %></p>
+  <p><%= ifsc %></p>
+  <p><%= bal %></p>
+</div>
+
+   </div>
+   <a href="/"><button type="button" name="button">Home</button></a>
+
+  </div>
+
+</div>
+
+<%- include("partials/footer") %>

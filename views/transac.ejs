@@ -1,0 +1,51 @@
+<%- include("partials/header") %>
+
+<div class="slogan-container">
+
+  <div class="col-xl-12 col-lg-7">
+   <div class="money-col transac">
+     <p id="tag_line" style="font-size:34px;color: #33D4D6;padding-bottom: 23px;">Transfer Money</p>
+     <!-- <span>To-:</span><input class="name" type="number" name="" value=""  placeholder="Account Number"><br> -->
+     <!-- To DropDown -->
+     <form class="home-form" action="/transfer" method="post">
+
+     <div class="input">
+
+     <span>To-:</span>
+<select class="form-input align-center" name="venue">
+    <option value="none">--- Select Reciver Name ---</option>
+
+  <%  list.forEach((item) => {%>
+    <option value=<%= item.name %>><%= item.name %></option>
+
+    <%  }); %>
+
+</select>
+</div>
+
+
+<div class="input">
+
+<span style="margin-left:-21px">From-:</span>
+     <select class="form-input align-center" name="venue">
+         <option value="none">--- Select Sender Name ---</option>
+         <%  list.forEach((item) => {%>
+           <option value=<%= item.name %>><%= item.name %></option>
+
+           <%  }); %>
+
+
+     </select>
+     </div>
+
+
+     <span style="margin-left:-35px">Amount-:</span><input class="" type="number" name="amount" value=""  placeholder="Amount" required><br>
+     <button type="submit" name="button">Transfer Amount</button>
+   </form>
+
+   </div>
+  </div>
+
+</div>
+
+<%- include("partials/footer") %>

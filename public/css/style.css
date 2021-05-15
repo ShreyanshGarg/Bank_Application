@@ -1,0 +1,356 @@
+html, body {
+  height: 100%;
+  font-family: 'Roboto',sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.wrapper{
+  background: url("/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+  position: absolute;
+  width: 100%;
+}
+.wrapper-bg{
+      background: #040E27;
+      height: 100%;
+      width: 100%;
+      opacity: .7;
+      position: absolute;
+}
+
+.header{
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+  /* z-index: 9; */
+  position: absolute;
+}
+
+
+.container-fluid{
+  width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+display: flex;
+}
+
+
+.navbar-sg{
+  /* margin-left: 255px; */
+      padding-top: 19px;
+  }
+
+
+
+nav{
+display: block;
+text-align: center;
+}
+
+.fab{
+  color: #33D4D6;
+    font-size: 56px;
+    padding: 26px 0px 1px 59px;
+}
+.brand-name{
+  color: #33D4D6;
+      font-size: 39px;
+      padding: 0px 0px 1px 13px;
+}
+
+ul{
+  display: inline-flex;
+  text-decoration: none;
+    list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li{
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 33px 33px 35px 33px;
+  transition: 0.3s;
+}
+li:hover{
+  color:#33D4D6;
+  cursor: pointer;
+}
+
+.navbar-nav{
+  width: 100%;
+}
+
+.optional{
+  padding-top: 41px;
+  color: white;
+  font-size: 13px;
+}
+
+.fas{
+  color: #33D4D6;
+  padding-right:7px
+}
+
+.Account-btn{
+  margin-left: 18px;
+  padding: 11px 9px 13px 9px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid #33D4D6;
+    background: transparent;
+    color: white;
+    transition: 0.3s;
+}
+
+.Account-btn:hover{
+  background-color: #33D4D6;
+
+}
+
+.slogan-container{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  position: absolute;
+  top:20%;
+}
+.slogan{
+  color: white;
+width: 100%;
+height: 68%;
+padding: 119px 80px 0px 109px;
+font-size: 60px;
+font-weight: 400;
+line-height: 74px;
+}
+
+#imp-btn{
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-more{
+  margin: 0px 77px 0px 112px;
+  border: 1px solid #33D4D6;
+  background-color:#33D4D6;
+  border-radius:5px;
+  padding: 11px 29px 13px 29px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.btn-more:hover{
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 1px solid #33D4D6;
+  color:white;
+}
+
+.transacs{
+  margin: 0px 69px 0px 0px;
+
+}
+
+.money-col{
+  width: 68%;
+    height: 94%;
+    background: black;
+    opacity: 1;
+    margin-left: 74px;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.home-form {
+  height: 96%;
+}
+
+#tag_line{
+  padding-top: 24px;
+      font-size: 30px;
+      font-weight: 500;
+      color: white;
+}
+
+.money-col input{
+  border-radius: 4px;
+    width: 50%;
+    height: 8%;
+    border: none;
+}
+.name{
+  margin-top: 21px;
+}
+
+.name-sudo{
+  margin-top: 45px;
+
+}
+
+.money-col button{
+  margin-top: 67px;
+  border: 1px solid #33D4D6;
+  background-color:#33D4D6;
+  border-radius:5px;
+  padding: 11px 29px 13px 29px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.money-col button:hover{
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 1px solid #33D4D6;
+  color:white;
+}
+
+/* css for transaction page */
+
+
+.transac{
+      margin-left: 332px;
+      width: 49%;
+    height: 100%;
+}
+
+.tag_transac{
+  font-size: 31px;
+  color: #33D4D6;
+}
+
+.transac span{
+  /* margin-left: -142px; */
+  font-size: 19px;
+  color: white;
+}
+
+.input{
+  height: 66px;
+}
+
+.form-input{
+  height:37px;
+  width: 50%
+}
+
+/* Css for previous transaction */
+
+.prev-table{
+  height: 80%;
+  width: 100%;
+position:absolute;
+  top:20%;
+
+}
+
+table{
+  border: 2px solid wheat;
+  color: white;
+  margin-left: 88px;
+  background-color: black;
+}
+
+ tbody, td, tfoot, th, thead, tr{
+       padding: 6px 11px 6px 10px;
+      border-right: 2px solid wheat;
+ }
+
+th{
+  font-size: 21px;
+    font-weight: 600;
+    padding: 3px 24px 8px 10px;
+    border: 2px solid wheat;
+    font-family: monospace;
+}
+}
+td{
+  font-size: 17px;
+}
+
+.align{
+  text-align: center;
+}
+
+
+
+/* CSS for All customer page */
+
+.more{
+  padding: 4px 5px 1px 3px;
+    font-size: 17px;
+    margin: 0px;
+}
+
+
+/* INfo page CSS */
+
+.info{
+  width: 74%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-transac{
+  margin-left: 434px;
+    width: 48%;
+    display: flex;
+}
+
+.info-transac p{
+  text-align: left;
+    color: wheat;
+    padding: 3px 1px 1px 47px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.info-transac span{
+  font-size: 13px;
+  padding: 3px 1px 1px 74px;
+
+}
+.top_element{
+  padding-top: 37px;
+}
+
+.para{
+  width: 50%;
+}
+
+.info button{
+  margin-left: 390px;
+  margin-top: 67px;
+  border: 1px solid #33D4D6;
+  background-color:#33D4D6;
+  border-radius:5px;
+  padding: 11px 29px 13px 29px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.info button:hover{
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 1px solid #33D4D6;
+  color:white;
+}
+
+
+.balancee p{
+  font-size: 17px;
+    font-weight: 500;
+    line-height: 47px;
+}

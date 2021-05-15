@@ -1,0 +1,58 @@
+<%- include("partials/header") %>
+
+<div class="prev-table">
+
+<table>
+  <tr>
+    <th>Sender Name</th>
+    <th>Sender Account Number</th>
+    <th>Recipient Name</th>
+    <th>Recipient Account Number</th>
+    <th>Amount</th>
+    <th>Time And Date</th>
+
+  </tr>
+  <%  list.forEach((items) => {%>
+    <tr>
+      <td><%= items.sendername %></td>
+      <td class="align"><%= items.send_acc %></td>
+      <td ><%= items.recivername %></td>
+      <td class="align"><%= items.rec_acc %></td>
+      <td class="align"><%= items.amount %></td>
+      <td>23:07/05-5-2021</td>
+    </tr>
+
+<%  }); %>
+
+
+  <!-- <tr>
+    <td>Shreyansh Garg</td>
+    <td class="align">102564822</td>
+    <td >Sarthak Garg</td>
+    <td class="align">125896662</td>
+    <td class="align">12365</td>
+    <td>23:07/05-5-2021</td>
+  </tr>
+
+  <tr>
+    <td>Shreyansh Garg</td>
+    <td class="align">102564822</td>
+    <td>Sarthak Garg</td>
+    <td class="align">125896662</td>
+    <td class="align">12365</td>
+    <td>23:07/05-5-2021</td>
+  </tr>
+
+  <tr>
+    <td>Shreyansh Garg</td>
+    <td class="align">102564822</td>
+    <td>Sarthak Garg</td>
+    <td class="align">125896662</td>
+    <td class="align">12365</td>
+    <td>23:07/05-5-2021</td>
+  </tr> -->
+
+
+</table>
+</div>
+<%- include("partials/footer") %>
